@@ -20,6 +20,7 @@ public class day3 {
                     //what you doing tomorrow, export that to a txt file
                     fileWriter = new FileWriter("C:list.txt");
                     Scanner w = new Scanner(System.in);
+                System.out.println("what are you doing tomorrow?");
                     String r = w.nextLine();
                 fileWriter.write(r);
                 fileWriter.close();  
