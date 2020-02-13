@@ -15,6 +15,9 @@ import java.util.Scanner; // Import the Scanner class to read text files
 
 public class day4 {
    public static void main(String[] args) {
+         System.out.println("What did you want to do today?");
+         
+     
     try {
       File myObj = new File("C:list.txt");
       Scanner myReader = new Scanner(myObj);
@@ -27,6 +30,12 @@ public class day4 {
       System.out.println("An error occurred.");
       e.printStackTrace();
     }
-  
+  System.out.println("did you do it?(true/false)");
+    boolean did;
+    String diddidnt = "";
+    did = u.nextBoolean();
+           // (y>n)? y:n;
+    diddidnt = did ? "did good." : "need pull your socks up.";
+        System.out.println("today you wanted to "+data+" and in the end you "+diddidnt);
 }
 }
