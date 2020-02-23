@@ -1,0 +1,45 @@
+
+
+julia> 2|4
+6
+
+julia> 2$4
+ERROR: UndefVarError: $ not defined
+Stacktrace:
+ [1] top-level scope at REPL[19]:1
+
+julia> 2 $ 4
+ERROR: UndefVarError: $ not defined
+Stacktrace:
+ [1] top-level scope at REPL[20]:1
+
+julia> 6 >> 1
+3
+
+julia> 2 << 1
+4
+
+julia> typemax(Int64)
+9223372036854775807
+
+julia> 1/0
+Inf
+
+julia> typemax(Float64)
+Inf
+
+julia> 0/0
+NaN
+
+julia> x = 5
+5
+
+julia> 2*x^2-3*x+1
+36
+
+julia> 2x^2-3x+1
+36
+
+julia> ^C
+
+julia>
